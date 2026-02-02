@@ -1,0 +1,234 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Paleta de cores suaves */
+:root {
+    --soft-pink: #F8BBD9;
+    --soft-yellow: #FFF9C4;
+    --soft-green: #C8E6C9;
+    --soft-blue: #BBDEFB;
+    --background: #FAFAFA;
+    --text: #424242;
+    --shadow: rgba(0, 0, 0, 0.1);
+}
+
+/* Corpo */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Header e Menu Hambúrguer */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--background);
+    z-index: 1000;
+    padding: 10px;
+    box-shadow: 0 2px 5px var(--shadow);
+}
+
+.hamburger {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+    background: none;
+    border: none;
+}
+
+.hamburger span {
+    width: 100%;
+    height: 3px;
+    background-color: var(--text);
+    transition: 0.3s;
+}
+
+#nav-menu {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100vh;
+    background-color: var(--soft-blue);
+    transition: left 0.3s ease;
+    padding-top: 60px;
+    box-shadow: 2px 0 5px var(--shadow);
+}
+
+#nav-menu.open {
+    left: 0;
+}
+
+#nav-menu ul {
+    list-style: none;
+    padding: 20px;
+}
+
+#nav-menu li {
+    margin-bottom: 20px;
+}
+
+#nav-menu a {
+    text-decoration: none;
+    color: var(--text);
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+#nav-menu img {
+    margin-right: 10px;
+}
+
+/* Seções */
+section {
+    padding: 80px 20px 40px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+    color: var(--text);
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+/* Cartões estilo post-it */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-color: var(--soft-yellow);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px var(--shadow);
+    max-width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px var(--shadow);
+}
+
+/* Galeria de Imagens */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.image-card {
+    background-color: var(--soft-green);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px var(--shadow);
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.image-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px var(--shadow);
+}
+
+.image-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Vídeo */
+.video-container {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px var(--shadow);
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 315px;
+}
+
+/* Contato */
+.contact-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.whatsapp-btn {
+    display: inline-block;
+    background-color: var(--soft-pink);
+    color: var(--text);
+    padding: 15px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 8px var(--shadow);
+    transition: background-color 0.3s;
+}
+
+.whatsapp-btn:hover {
+    background-color: #F48FB1;
+}
+
+.map {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px var(--shadow);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--soft-blue);
+    color: var(--text);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .cards, .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card, .image-card {
+        max-width: 90%;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+  }
