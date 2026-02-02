@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="overlay"></div> <!-- Sobreposição translúcida para legibilidade do texto -->
+    
     <header>
         <div class="hamburger" id="hamburger">
             <span></span>
@@ -15,9 +17,9 @@
         </div>
         <nav id="nav-menu">
             <ul>
-                <li><a href="#sobre"><img src="https://via.placeholder.com/20x20?text=🏠" alt="Ícone Sobre"> Sobre</a></li>
-                <li><a href="#imagens"><img src="https://via.placeholder.com/20x20?text=🖼️" alt="Ícone Imagens"> Imagens</a></li>
-                <li><a href="#contato"><img src="https://via.placeholder.com/20x20?text=📞" alt="Ícone Contato"> Contato</a></li>
+                <li><a href="#sobre"><span>🎈</span> Sobre</a></li>
+                <li><a href="#imagens"><span>🖼️</span> Imagens</a></li>
+                <li><a href="#contato"><span>📞</span> Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -27,13 +29,16 @@
             <h1>Bem-vindo ao Loly Pop Festas Infantis – São Francisco</h1>
             <div class="cards">
                 <div class="card">
-                    <p>O salão é ideal para festas infantis, oferecendo um ambiente seguro e organizado para crianças e famílias.</p>
+                    <span>🎉</span>
+                    <p>Espaço ideal para festas infantis, cheio de cores e alegria!</p>
                 </div>
                 <div class="card">
-                    <p>Espaço projetado para diversão e conforto, perfeito para aniversários e celebrações especiais.</p>
+                    <span>🛡️</span>
+                    <p>Ambiente seguro, colorido e organizado para a diversão das crianças.</p>
                 </div>
                 <div class="card">
-                    <p>Com estrutura pensada na segurança e alegria das crianças, garantimos momentos inesquecíveis.</p>
+                    <span>👨‍👩‍👧‍👦</span>
+                    <p>Pensado para a tranquilidade dos pais e momentos inesquecíveis.</p>
                 </div>
             </div>
         </section>
@@ -41,13 +46,13 @@
         <section id="imagens">
             <h2>Galeria de Imagens</h2>
             <div class="gallery">
-                <div class="image-card">
+                <div class="image-frame">
                     <img src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Espaço infantil">
-                    <p>Este é o nosso espaço infantil, com brinquedos pensados para a diversão e segurança das crianças.</p>
+                    <p>Espaço infantil com brinquedos, pensado para garantir diversão e segurança.</p>
                 </div>
-                <div class="image-card">
-                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Área do buffet">
-                    <p>Área do buffet, preparada para receber os convidados com conforto e organização.</p>
+                <div class="image-frame">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Área de buffet">
+                    <p>Área de buffet organizada para receber convidados com conforto.</p>
                 </div>
                 <!-- Adicione mais imagens conforme necessário -->
             </div>
@@ -55,7 +60,7 @@
 
         <section id="video">
             <h2>Vídeo do Espaço</h2>
-            <p>Vídeo com uma visão geral do espaço, mostrando a estrutura completa do salão.</p>
+            <p>Vídeo com uma visão geral do espaço e da estrutura do salão.</p>
             <div class="video-container">
                 <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
@@ -65,19 +70,12 @@
             <h2>Entre em Contato</h2>
             <div class="contact-info">
                 <p><strong>Endereço:</strong> Av. São Francisco de Paula, 3473 – Areal, Pelotas – RS, 96080-730</p>
-                <p><strong>Telefone / WhatsApp:</strong> (53) 98130-6613</p>
+                <p><strong>WhatsApp / Telefone:</strong> (53) 98130-6613</p>
                 <a href="https://wa.me/53981306613" class="whatsapp-btn">Fale conosco pelo WhatsApp</a>
-            </div>
-            <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.789!2d-52.345678!3d-31.765432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDQ1JzU5LjAiUyA1MsKwMjAnNDguMCJX!5e0!3m2!1sen!2sbr!4v1234567890123!5m2!1sen!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2023 Loly Pop Festas Infantis – São Francisco. Todos os direitos reservados.</p>
-    </footer>
-
     <script src="script.js"></script>
 </body>
-</html>
+                        </html>
